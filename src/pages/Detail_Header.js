@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import homeIcon from '../image/SystemIcon.svg';
+import homeIcon from '../image/rightbtn.svg';
 import backIcon from '../image/SyIcon.svg';
 
 function Detail_Header() {
@@ -18,15 +18,15 @@ function Detail_Header() {
     display: 'flex',
     justifyContent: 'space-between',
     padding: '10px',
-    borderBottom: '1px solid #ddd',
+    borderBottom: '0px solid #ddd',
     position: 'fixed', 
-    width: '100%', 
-    backgroundColor: '#fff', 
+    width: '400px', 
+    backgroundColor: 'transparent', 
     zIndex: 1, 
   };
 
   const supportButtonStyle = {
-    width: "auto", 
+    width: "360px", 
     height: 40, 
     paddingLeft: 10, 
     paddingRight: 10,
@@ -43,7 +43,9 @@ function Detail_Header() {
     left: 0, 
     right: 0, 
     textAlign: 'center', 
-    lineHeight: 3
+    lineHeight: '40px',
+    margin: 'auto',
+    borderRadius: '4px'
   }
 
   // 모달 팝업을 닫는 함수
@@ -57,7 +59,7 @@ function Detail_Header() {
         </button>
         
         <Link to="/">
-          <img src={homeIcon} alt="홈 아이콘" width="24" height="24" />
+          <img src={homeIcon} alt="홈 아이콘" width="90" height="90" />
         </Link>
       </div>
 
@@ -66,15 +68,22 @@ function Detail_Header() {
         <div style={{textAlign: 'center', color: 'white', fontSize: 14, fontFamily: 'Pretendard', fontWeight: '400', lineHeight: 5, wordWrap: 'break-word'}}>응원하기</div>
       </button>
 
-      {/* 모달 팝업 */}
+      
       {isModalOpen && (
-        <div style={{position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: 9999}}>
-          <div style={{position: 'relative', width: '300px', height: '200px', margin: '0 auto', marginTop: '200px', backgroundColor: 'white'}}>
+        <div style={{position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'transparent', zIndex: 9999}}>
+          <div style={{position: 'relative', width: '350px', height: '100px', margin: '0 auto', marginTop: '1px', backgroundColor: 'white'}}>
             <button onClick={closeModal} style={{position: 'absolute', right: '10px', top: '10px'}}>
               X
             </button>
             <p>앱을 다운로드 받으세요!</p>
-            <button className="x"style={{marginTop: '80px',background: '#00C4C4',color: 'white', border: 'white', borderRadius: 5}}>앱에서 보기</button>
+            <button 
+    className="x"
+    style={{marginTop: '30px',background: '#00C4C4',color: 'white', border: 'white', borderRadius: 5}}
+    onClick={() => window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'}
+>
+    앱에서 보기
+</button>
+
           </div>
         </div>
       )}
