@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/snuggle/static/css/main.c145d942.chunk.css",
+    "main.css": "/snuggle/static/css/main.f0cfcda6.chunk.css",
     "main.js": "/snuggle/static/js/main.a2886fa1.chunk.js",
     "main.js.map": "/snuggle/static/js/main.a2886fa1.chunk.js.map",
     "runtime-main.js": "/snuggle/static/js/runtime-main.6f0b036c.js",
@@ -11,10 +11,10 @@
     "static/js/3.c73cc1a1.chunk.js": "/snuggle/static/js/3.c73cc1a1.chunk.js",
     "static/js/3.c73cc1a1.chunk.js.map": "/snuggle/static/js/3.c73cc1a1.chunk.js.map",
     "index.html": "/snuggle/index.html",
-    "precache-manifest.f4961fab4fa133772924c40cd759b02d.js": "/snuggle/precache-manifest.f4961fab4fa133772924c40cd759b02d.js",
+    "precache-manifest.97570b5c682c35e559d0650dff3fe1e9.js": "/snuggle/precache-manifest.97570b5c682c35e559d0650dff3fe1e9.js",
     "service-worker.js": "/snuggle/service-worker.js",
     "static/css/2.fe62fa80.chunk.css.map": "/snuggle/static/css/2.fe62fa80.chunk.css.map",
-    "static/css/main.c145d942.chunk.css.map": "/snuggle/static/css/main.c145d942.chunk.css.map",
+    "static/css/main.f0cfcda6.chunk.css.map": "/snuggle/static/css/main.f0cfcda6.chunk.css.map",
     "static/js/2.4cb581f1.chunk.js.LICENSE.txt": "/snuggle/static/js/2.4cb581f1.chunk.js.LICENSE.txt",
     "static/media/Frame.svg": "/snuggle/static/media/Frame.1c57ef70.svg",
     "static/media/SyIcon.svg": "/snuggle/static/media/SyIcon.ee157619.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.6f0b036c.js",
     "static/css/2.fe62fa80.chunk.css",
     "static/js/2.4cb581f1.chunk.js",
-    "static/css/main.c145d942.chunk.css",
+    "static/css/main.f0cfcda6.chunk.css",
     "static/js/main.a2886fa1.chunk.js"
   ]
 }

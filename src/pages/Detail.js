@@ -95,6 +95,7 @@ function Detail(props){
 
 <div style={{width: '100%', height: 1, position: 'relative', background: '#F2F4F6', lineHeight: 10}} /></div>
 
+
 <div style={{width: 109, hegiht: 4, color: 'black', fontSize: 24, fontFamily: 'Pretendard', textAlign:"center", lineHeight: 10, wordWrap: 'break-word'}}><h4 className="pt-5"></h4></div>
 <div style={{width: '100%', height: 50, padding: 16, background: '#F9FAFB', borderRadius: 8, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 1, display: 'inline-flex'}}>
 <div style={{width: '100%', height: '100%', paddingLeft: 16, paddingRight: 16, paddingTop: 8, paddingBottom: 8, background: '#F9FAFB', borderRadius: 8, justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
