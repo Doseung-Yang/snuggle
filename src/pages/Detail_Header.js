@@ -79,10 +79,23 @@ function Detail_Header() {
             <button 
     className="x"
     style={{marginTop: '30px',background: '#00C4C4',color: 'white', border: 'white', borderRadius: 5}}
-    onClick={() => window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'}
+    onClick={() => 
+      window.location.href = 
+    'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'}
 >
     앱에서 보기
 </button>
+
+{/* daumtools.web2app({
+	urlScheme : '',									// iphone : custom scheme
+	intentURI : '',									// android : intent URI
+	appName   : '', 								// application Name (ex. facebook, twitter, daum)
+	storeURL  : '',									// app store URL
+	willInvokeApp : function() {},					// function for logging
+	onAppMissing  : function() {},					// fallback function (default. move to appstore)
+	onUnsupportedEnvironment : function() {}		// fallback function
+}); */}
+
 
           </div>
         </div>
