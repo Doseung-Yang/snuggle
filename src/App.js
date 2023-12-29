@@ -14,8 +14,6 @@ import backcon from './image/SyIcon.svg';
 const images = [null, image2, image3, image4];
 
 
-// ... 이전 코드 생략 ...
-
 function App() {
   let [shoes, setShoes] = useState(data);
   let location = useLocation();
@@ -53,14 +51,14 @@ function App() {
 }
 
 function Home({shoes}) {
-   // 현재 선택된 옵션을 상태로 관리합니다.
+ 
    const [sortOption, setSortOption] = useState('최신순');
 
-   // 옵션이 변경되었을 때 호출되는 함수입니다.
+  
    const handleSortChange = (event) => {
      const newValue = event.target.value;
      setSortOption(newValue);
-     // 여기서 실제로 shoes 배열을 정렬하는 로직을 추가할 수 있습니다.
+ 
    };
  
 
@@ -69,9 +67,9 @@ function Home({shoes}) {
       <div className="row">
         <div className="col-12">
         
-        
+
           <select
-            value={sortOption} // 현재 선택된 상태 값으로 설정
+            value={sortOption} 
             onChange={handleSortChange}
             className="form-select"
             aria-label="정렬 기준 선택"

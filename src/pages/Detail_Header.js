@@ -49,10 +49,9 @@ function Detail_Header() {
     
   }
 
-  // 모달 팝업을 닫는 함수
   const closeModal = () => setIsModalOpen(false);
 
-  // 앱이나 스토어로 이동하는 함수
+  
   const openAppOrStore = () => {
     var scheme = 'wadiz://letz/detail/{프로젝트번호}'; // 앱 스키마
     var storeURL = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621?l=enmt%3D8'; // 스토어 URL
@@ -65,6 +64,8 @@ function Detail_Header() {
         window.location = storeURL;
     }, 500);
   }
+
+
 
   return (
     <>
