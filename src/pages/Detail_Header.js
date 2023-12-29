@@ -51,6 +51,20 @@ function Detail_Header() {
   // 모달 팝업을 닫는 함수
   const closeModal = () => setIsModalOpen(false);
 
+  // 앱이나 스토어로 이동하는 함수
+  const openAppOrStore = () => {
+    var scheme = 'wadiz://letz/detail/{프로젝트번호}'; // 앱 스키마
+    var storeURL = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621?l=enmt%3D8'; // 스토어 URL
+
+    // 앱으로 이동
+    window.location = scheme;
+
+    // 앱이 없을 경우 스토어로 이동
+    setTimeout(function() {
+        window.location = storeURL;
+    }, 500);
+  }
+
   return (
     <>
       <div style={headerStyle}>
@@ -77,26 +91,12 @@ function Detail_Header() {
             </button>
             <p>앱을 다운로드 받으세요!</p>
             <button 
-    className="x"
-    style={{marginTop: '30px',background: '#00C4C4',color: 'white', border: 'white', borderRadius: 5}}
-    onClick={() => 
-      window.location.href = 
-    'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'}
->
-    앱에서 보기
-</button>
-
-{/* daumtools.web2app({
-	urlScheme : '',									// iphone : custom scheme
-	intentURI : '',									// android : intent URI
-	appName   : '', 								// application Name (ex. facebook, twitter, daum)
-	storeURL  : '',									// app store URL
-	willInvokeApp : function() {},					// function for logging
-	onAppMissing  : function() {},					// fallback function (default. move to appstore)
-	onUnsupportedEnvironment : function() {}		// fallback function
-}); */}
-
-
+                className="x"
+                style={{marginTop: '30px', background: '#00C4C4', color: 'white', border: 'white', borderRadius: 5}}
+                onClick={openAppOrStore} // 함수를 직접 연결
+            >
+                앱에서 보기
+            </button>
           </div>
         </div>
       )}
