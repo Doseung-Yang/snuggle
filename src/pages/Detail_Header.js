@@ -46,6 +46,7 @@ function Detail_Header() {
     lineHeight: '40px',
     margin: 'auto',
     borderRadius: '4px'
+    
   }
 
   // 모달 팝업을 닫는 함수

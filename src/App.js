@@ -69,6 +69,7 @@ function Home({shoes}) {
       <div className="row">
         <div className="col-12">
         
+        
           <select
             value={sortOption} // 현재 선택된 상태 값으로 설정
             onChange={handleSortChange}

@@ -16,6 +16,8 @@ function Detail(props){
     return <div>해당 프로젝트를 찾을 수 없습니다.</div>;
   }
 
+
+  
   return (
     <div className="Detail_Header">
       <div className="row">
